@@ -6,6 +6,7 @@ package com.example.demo.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.demo.dao.IArticuloDAO;
 import com.example.demo.dto.Articulo;
@@ -13,7 +14,8 @@ import com.example.demo.dto.Articulo;
 /**
  * 
  */
-public class ArticuloServiceImpl {
+@Service
+public class ArticuloServiceImpl implements IArticuloService {
 
 	@Autowired
 	IArticuloDAO daoArticulo;
