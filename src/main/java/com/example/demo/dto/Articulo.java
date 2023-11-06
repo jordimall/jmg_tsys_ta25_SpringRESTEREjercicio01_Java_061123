@@ -32,7 +32,6 @@ public class Articulo {
 
 	@ManyToOne
 	@JoinColumn(name = "Fabricante")
-	@Column(name = "Fabricante")
 	private Fabricante fabricante;
 
 	/**
